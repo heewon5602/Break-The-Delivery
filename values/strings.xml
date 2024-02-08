@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BreakTheDelivery</string>
+    <string name="customer">CUSTOMER</string>
+    <string name="deliverMan">DELIVERY MAN</string>
+    <string name="storeOwner">STORE OWNER</string>
+    <string name="id">ID</string>
+    <string name="pw">Password</string>
+    <string name="phone_num">Phone Number</string>
+    <string name="id_hint">\tEnter your id</string>
+    <string name="pw_hint">\tEnter your password</string>
+    <string name="phoneNum_hint">\tEnter your phone number</string>
+    <string name="next">NEXT</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="name">배달타파</string>
+    <string name="store1">팬케익 팬트리\n사장님이 직접 구운 따끈따끈한 팬케이크</string>
+    <string name="store2">보스턴수제버거\n미국 본토의 맛을 느낄 수 있는 햄버거</string>
+    <string name="store3">폭풍토핑 피자스톰\n토핑이 듬뿍 올리고 맛있게 구운 피자</string>
+    <string name="store4">샐러드앤가든\n매일마다 신선한 재료로 만드는 샐러드</string>
+</resources>

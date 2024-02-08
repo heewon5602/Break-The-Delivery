@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5A91D"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="226dp"
+            android:layout_height="205dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="34dp"
+            android:fontFamily="@font/koho_bold"
+            android:gravity="center"
+            android:lineSpacingMultiplier="0.8"
+            android:text="Break\nThe\nDelivery"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!--Sign In Button-->
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/button_round"
+            android:fontFamily="@font/koho_medium"
+            android:gravity="center"
+            android:text="SIGN IN"
+            android:textColor="@color/black" />
+
+        <!--Sign Up Button-->
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_round"
+            android:fontFamily="@font/koho_medium"
+            android:gravity="center"
+            android:text="CREATE AN ACCOUNT"
+            android:textColor="@color/black" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--group_icon 눌렀을 시 나오는 화면-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5A91D"
+    android:orientation="vertical">
+
+        <!--상단 앱 이름-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/do_hyeon"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+
+    <!--하얀 뒷배경-->
+    <FrameLayout
+        android:layout_width="395dp"
+        android:layout_height="550dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/background_frame_round">
+        <!--생성된 참여 가능한 그룹(팬케익 제외 다른 가게들)-->
+        <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="500dp"
+            android:orientation="vertical">
+            <!--그룹 2-->
+            <FrameLayout
+                android:id="@+id/store2"
+                android:layout_width="380dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/background_store_round">
+                <ImageView
+                    android:src="@drawable/store2"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="30dp"
+                    android:text="보스턴수제버거"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="50dp"
+                    android:text="주문시간: 12:00"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="70dp"
+                    android:text="인원 : 1/5명"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"/>
+                <!--해당 버튼 눌리면 그룹에 참여된 것으로 간주하고 버튼 text가 참여 -> "참여 취소"로 바뀌어야 된다.-->
+                <Button
+                    android:id="@+id/button_participate2"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="16dp"
+                    android:text="참여하기"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"
+                    android:background="@drawable/button_orange"/>
+            </FrameLayout>
+
+            <!--그룹3-->
+            <FrameLayout
+                android:layout_width="380dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/background_store_round">
+                <ImageView
+                    android:src="@drawable/store3"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="30dp"
+                    android:text="폭풍토핑 피자스톰"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="50dp"
+                    android:text="주문시간: 15:30"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="70dp"
+                    android:text="인원 : 2/5명"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"/>
+                <!--해당 버튼 눌리면 그룹에 참여된 것으로 간주하고 버튼 text가 참여 -> "참여 취소"로 바뀌어야 된다.-->
+                <!--참여 여부 Toast 메세지로 출력-->
+                <Button
+                    android:id="@+id/button_participate3"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="16dp"
+                    android:text="참여하기"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"
+                    android:background="@drawable/button_orange"/>
+            </FrameLayout>
+
+            <!--그룹4-->
+            <FrameLayout
+                android:layout_width="380dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/background_store_round">
+                <ImageView
+                    android:src="@drawable/store4"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="30dp"
+                    android:text="샐러드앤가든"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="50dp"
+                    android:text="주문시간: 10:00"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="70dp"
+                    android:text="인원 : 3/5명"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"/>
+                <!--해당 버튼 눌리면 그룹에 참여된 것으로 간주하고 버튼 text가 참여 -> "참여 취소"로 바뀌어야 된다.-->
+                <!--참여 여부 Toast 메세지로 출력-->
+                <Button
+                    android:id="@+id/button_participate4"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="16dp"
+                    android:text="참여하기"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/do_hyeon"
+                    android:background="@drawable/button_orange"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!--하단 아이콘-->
+    <FrameLayout
+        android:layout_width="395dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#fbd38b"
+        android:background="@drawable/background_frame_round">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--메인화면 버튼-->
+            <ImageButton
+                android:id="@+id/home_button"
+                android:src="@drawable/home_icon"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"/>
+            <!--그룹 버튼-->
+            <ImageButton
+                android:id="@+id/group_button"
+                android:src="@drawable/group_icon"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="55dp"/>
+            <!--배달 버튼-->
+            <ImageButton
+                android:id="@+id/delivery_button"
+                android:src="@drawable/scooter_icon"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp" />
+            <!--프로필 버튼-->
+            <ImageButton
+                android:id="@+id/profile_button"
+                android:src="@drawable/profile_icon"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

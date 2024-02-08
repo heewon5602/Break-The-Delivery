@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="CoarseFineLocation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--위치정보 접근을 위한 permission-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BreakTheDelivery"
+        tools:targetApi="31">
+
+        <!--팝업창 설정-->
+        <activity android:name=".CustomerMakeRoom" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".food_detail_popup" android:theme="@android:style/Theme.Dialog"/>
+
+        <activity
+            android:name=".CustomerCart"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerParticipateStatus"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="false" />
+        <activity
+            android:name=".ConvertAccount"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSavings"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerOrderHistory"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerMyDelivery"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerMyPage"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerHome"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".StoreCreate"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryCreate"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerCreate"
+            android:exported="false" />
+        <activity
+            android:name=".TypeSelection"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--Delivery Map 을 위함-->
+        <meta-data
+            android:name = "com.example.breakthedelivery"
+            android:value = "AIzaSyD_J3Jz5FHg0rmr40Wm0moPamAtIl_dwI0"
+            />
+    </application>
+
+</manifest>

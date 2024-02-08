@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5A91D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/signup_title" />
+
+        <Button
+            android:id="@+id/customer_select"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_round"
+            android:text="@string/customer"
+            android:textColor="@color/black"
+            android:fontFamily="@font/koho_medium"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/deliverMan_select"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_round"
+            android:text="@string/deliverMan"
+            android:textColor="@color/black"
+            android:fontFamily="@font/koho_medium"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/storeOwner_select"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_round"
+            android:text="@string/storeOwner"
+            android:textColor="@color/black"
+            android:fontFamily="@font/koho_medium"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

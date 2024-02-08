@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtSavings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/savings_background_img">
+
+    <!--앱 이름-->
+    <FrameLayout
+        android:layout_width="198dp"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/do_hyeon"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/do_hyeon"
+            android:text="절약현황"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+    </FrameLayout>
+
+    <!--monthly savings-->
+    <FrameLayout
+        android:layout_width="213dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|right"
+        android:orientation="vertical"
+        android:background="@drawable/button_with_stroke"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp">
+
+        <!--Month-->
+        <TextView
+            android:id="@+id/txtMonth"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/do_hyeon"
+            android:textColor="#C70000"
+            android:textSize="20dp"/>
+
+        <!--How much savings on following month?-->
+        <TextView
+            android:id="@+id/txtMonthSavings"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="33dp"
+            android:fontFamily="@font/do_hyeon"
+            android:text="100000원 saved!"
+            android:textColor="#C70000"
+            android:textSize="20dp"/>
+    </FrameLayout>
+
+    <!--흰 배경 & Daily savings-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <!--Today-->
+            <TextView
+                android:id="@+id/txtToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/do_hyeon"
+                android:text="Today"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/button_with_stroke">
+
+                <TextView
+                    android:id="@+id/txtTodayDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/do_hyeon"
+                    android:text="#"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="28dp"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="70dp"
+                    android:background="#F5A91D"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <!--배달 내역-->
+                <TextView
+                    android:id="@+id/txtHistory"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/do_hyeon"
+                    android:text="#"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_vertical"/>
+                <!--배달료 아낀 비용-->
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/do_hyeon"
+                    android:text="#"
+                    android:textSize="15dp"
+                    android:textColor="#C70000"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <!--Yesterday-->
+            <TextView
+                android:id="@+id/txtYesterday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/do_hyeon"
+                android:text="Yesterday"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/button_with_stroke">
+
+                <TextView
+                    android:id="@+id/txtYesterdayDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/do_hyeon"
+                    android:text="#"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="28dp"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="70dp"
+                    android:background="#F5A91D"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <!--배달 내역-->
+                <TextView
+                    android:id="@+id/txtHistory_yesterday"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/do_hyeon"
+                    android:text="#"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_vertical"/>
+                <!--배달료 아낀 비용-->
+                <TextView
+                    android:id="@+id/txtPrice_yesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/do_hyeon"
+                    android:text="#"
+                    android:textSize="15dp"
+                    android:textColor="#C70000"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <!--하단 아이콘-->
+    <FrameLayout
+        android:layout_width="395dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#fbd38b"
+        android:background="@drawable/background_frame_round">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--메인화면 버튼-->
+            <ImageButton
+                android:id="@+id/home_button"
+                android:src="@drawable/home_icon"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"/>
+            <!--그룹 버튼-->
+            <ImageButton
+                android:id="@+id/group_button"
+                android:src="@drawable/group_icon"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="55dp"/>
+            <!--배달 버튼-->
+            <ImageButton
+                android:id="@+id/delivery_button"
+                android:src="@drawable/scooter_icon"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp" />
+            <!--프로필 버튼-->
+            <ImageButton
+                android:id="@+id/profile_button"
+                android:src="@drawable/profile_icon"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
